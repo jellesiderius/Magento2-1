@@ -245,7 +245,7 @@ define(
                     if (quote.billingAddress()) {
                         this.updateBillingName(quote.billingAddress().firstname, quote.billingAddress().lastname);
                         this.updateTermsUrl(quote.billingAddress().countryId);
-                        this.phoneValidate();
+                        this.phoneValidate(quote.billingAddress().telephone);
                         this.updateShowFields();
                     }
 
